@@ -9,7 +9,7 @@ List emptyList_2 = [];   // Equivalent Empty array
 var emptyList_3  = new List();  // One more Empty array
 
 
-main() {
+void main() {
   print('3 Empty Lists');
   print('Empty list 1 $emptyList');
   print('Empty list 2 $emptyList_2');
@@ -26,7 +26,7 @@ main() {
 
 var langs = ['Java', 'Python', 'Swift', 'Dart'];
 
-elements() {
+void elements() {
 
   langs.add('C++');  // Add new elements
   print(langs);
@@ -37,5 +37,9 @@ elements() {
 
   var number = '212-32-432-121-3';
   var parts = number.split('-');
-  print(Type(parts);
+  print(parts);
+  print(parts.runtimeType);
+  
+  var srt = parts.join('-');
+  assert(number == srt);
 }
