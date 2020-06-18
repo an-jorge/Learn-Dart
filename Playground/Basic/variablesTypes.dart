@@ -36,3 +36,13 @@ A final variable can be set only once; a const variable is a compile-time consta
 initialized the first time it’s used.
 
  */
+
+// Const
+
+ const borned = 2000;
+ borned = 2020;   // Constant variables can't be assigned a value
+
+// final 
+
+final june = 10;
+june = 12;  // The final variable 'june' can only be set once
