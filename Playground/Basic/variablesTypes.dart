@@ -2,11 +2,11 @@
 // Here’s an example of creating a variable and initializing it:
 
 
-var name = "Nzambi"
+var name = "Nzambi";
 
 // Dynamic variable
 
-dynamic name = 'Bob';
+dynamic name1 = 'Bob';
 
 /*
 ## Default value ##
@@ -18,11 +18,11 @@ because numbers—like everything else in Dart—are objects.
  */
 
 int countable; // init variable without value (Variavel sem atributo)
-print(countable == null); // Null is 0 or nothing
+// Null is 0 or nothing
 
-String name = 'Nadia';
+String name2 = 'Nadia';
 
-Bool luanda = true;
+bool luanda = true;
 
 
 
@@ -39,10 +39,8 @@ initialized the first time it’s used.
 
 // Const
 
- const borned = 2000;
- borned = 2020;   // Constant variables can't be assigned a value
+ const borned = 2000; // Constant variables can't be assigned a value
 
 // final 
 
-final june = 10;
-june = 12;  // The final variable 'june' can only be set once
+final june = 10;  // The final variable 'june' can only be set once
