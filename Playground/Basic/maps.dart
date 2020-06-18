@@ -1,13 +1,24 @@
-/*
+void main() {
 
-Lists and maps are commonly used collection types. In Dart, arrays are List objects. Lists and maps can be created using literals or constructors. It’s recommended to use collection literals when possible. 
- */
+  // String, int -> Maps
+  Map<String, int> persons = {
+    'Tina': 32,
+    'Sara': 30,
+    'Tom': 23
+  };
 
-main() {
- var contacts = {'name': 'Bene', 'number': 234};
 
-contacts['name'] = 'Marcos';
+  // Dynamic Maps
+  
+  Map<String, dynamic> drinks = {
+    'Cerveja': 'Cuca',
+    'Vinho': 'Porto',
+    'Wisky': 33,
+    'Água': false
 
-print(contacts);
+  };
 
+  print(drinks['Cerveja']);
+
+  print(persons['Água']);
 }
