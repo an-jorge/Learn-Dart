@@ -1,9 +1,15 @@
 import 'classBook.dart';
+import 'dart:io';
 
 main() {
   print('[== Welcome == ]');
+  print('Book\'s Title');
 
-  var myBook = Books(title: 'A Bela', pages: 150, cost: 1.200, published: 1999);
-  print(
-      'Meu Livro: ${myBook.title}, custou ${myBook.pages}, foi publicado no ano ${myBook.published}');
+  String bookTitle = stdin.readLineSync();
+  print('Number of pages');
+  int bookPages = int.parse(stdin.readLineSync());
+
+  var usrBook = Books(title: bookTitle, pages: bookPages);
+
+  print('Book: ${usrBook.title}, Number of pages: ${usrBook.pages}');
 }
